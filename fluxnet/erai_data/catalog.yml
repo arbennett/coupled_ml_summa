@@ -1,0 +1,20 @@
+metadata:
+  version: 1
+sources:
+  subdaily:
+    description: era interim at a
+    parameters: # User parameters
+      site:
+        description: Fluxnet site id
+        type: str
+    driver: csv
+    args: # passed to the open() method
+      urlpath: '{{ CATALOG_DIR }}/FLX_{{ site }}_FLUXNET2015_ERAI_H?_*.csv'
+      csv_kwargs:
+        na_values: -9999
+        parse_dates: ['TIMESTAMP_END']  #, 'TIMESTAMP_END']
+        assume_missing: True
+        blocksize: 32MB
+        usecols: ['TIMESTAMP_END', 'TA_ERA', 'P_ERA',
+                  'SW_IN_ERA', 'LW_IN_ERA', 'PA_ERA', 'VPD_ERA',
+                  'WS_ERA']

@@ -1,0 +1,44 @@
+! ---------
+! model variables
+! ---------
+! Format:
+! varname | timestep | instant | sum | mean | var | min | max | mode
+!
+scalarSenHeatTotal               | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarLatHeatTotal               | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarCanopySublimation          | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarGroundEvaporation          | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarCanopyEvaporation          | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarTotalSoilWat               | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarCanopyWat                  | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarCanopyTranspiration        | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarLatHeatGround              | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarLatHeatCanopyEvap          | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarLatHeatCanopyTrans         | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarNetRadiation               | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarGroundNetNrgFlux           | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarCanopyNetNrgFlux           | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarSenHeatGround              | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarSenHeatCanopy              | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarLAI                        | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarTotalRunoff                | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarSurfaceTemp                | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarGroundResistance           | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarSoilResistance             | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarLeafResistance             | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarVPair                      | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarSatVP_CanopyTemp           | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarSatVP_GroundTemp           | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarSoilRelHumidity            | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+mLayerTemp                       | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+mLayerVolFracWat                 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+mLayerMatricHead                 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+mLayerRootDensity                | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+mLayerDepth                      | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+mLayerHeight                     | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+iLayerHeight                     | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarSWE                        | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarLWNetUbound                | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarGroundAlbedo               | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarGroundAbsorbedSolar        | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+scalarCanopyAbsorbedSolar        | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0

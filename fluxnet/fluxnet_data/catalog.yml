@@ -1,0 +1,20 @@
+metadata:
+  version: 1
+sources:
+  subdaily:
+    description: fluxnet fullset at a
+    parameters: # User parameters
+      site:
+        description: Fluxnet site id
+        type: str
+    driver: csv
+    args: # passed to the open() method
+      urlpath: '{{ CATALOG_DIR }}/FLX_{{ site }}_FLUXNET2015_FULLSET_H?_*.csv'
+      csv_kwargs:
+        na_values: -9999
+        parse_dates: ['TIMESTAMP_END']  #, 'TIMESTAMP_END']
+        assume_missing: True
+        blocksize: 32MB
+        usecols: ['TIMESTAMP_END', 'TA_F', 'P',
+                  'SW_IN_F', 'LW_IN_F', 'PA_F', 'RH',
+                  'WS', 'LE_F_MDS', 'H_F_MDS', 'NETRAD', 'G_F_MDS', 'EBC_CF_N', 'LE_CORR', 'H_CORR']
